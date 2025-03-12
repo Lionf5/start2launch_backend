@@ -1,37 +1,37 @@
-# 🚀 Start2Launch - Backend
+# 🚀 Start2Launch_Backend
 
-Welcome to the **Start2Launch Backend** repository! This is the backend system for **Start2Launch**, a full-stack web application designed to help students and developers build, collaborate, and deploy projects seamlessly.  
+Welcome to the **Start2Launch Backend** repository! This is the backend system for **Start2Launch**, a full-stack web application designed to help students and developers build, collaborate, and deploy projects seamlessly.
 
-The backend is built using **Spring Boot**, providing a secure and scalable REST API for authentication, project management, and real-time collaboration.  
+The backend is built using **Spring Boot**, providing a secure and scalable REST API for authentication, project management, and real-time collaboration.
 
 ---
 
 ## 📌 Features
 
-✅ **User Authentication & Authorization** (OAuth 2.0, JWT)  
-✅ **Project Management API** (CRUD operations for projects, tasks, and team members)  
-✅ **Real-Time Collaboration** (Live chat, file sharing, code editing via WebSockets)  
-✅ **Role-Based Access Control** (Admin, Team Lead, Developer, Viewer)  
-✅ **Database Optimization** (Hybrid MySQL & MongoDB for structured & unstructured data)  
-✅ **Scalable Deployment** (CI/CD with GitHub Actions, Docker, and Kubernetes)  
+✅ **User Authentication & Authorization** (OAuth 2.0, JWT)\
+✅ **Project Management API** (CRUD operations for projects, tasks, and team members)\
+✅ **Real-Time Collaboration** (Live chat, file sharing, code editing via WebSockets)\
+✅ **Role-Based Access Control** (Admin, Team Lead, Developer, Viewer)\
+✅ **Database Optimization** (Hybrid MySQL & MongoDB for structured & unstructured data)\
+✅ **Scalable Deployment** (CI/CD with GitHub Actions, Docker, and Kubernetes)
 
 ---
 
-## 🏠 Tech Stack  
+## 🏠 Tech Stack
 
-- **Backend:** Spring Boot, Java  
-- **Security:** OAuth 2.0, JWT, Spring Security  
-- **Database:** MySQL (Structured Data), MongoDB (Unstructured Data)  
-- **Real-Time Communication:** WebSockets  
-- **API Documentation:** Swagger  
-- **DevOps:** Docker, Kubernetes, Jenkins, GitHub Actions  
+- **Backend:** Spring Boot, Java
+- **Security:** OAuth 2.0, JWT, Spring Security
+- **Database:** MySQL (Structured Data), MongoDB (Unstructured Data)
+- **Real-Time Communication:** WebSockets
+- **API Documentation:** Swagger
+- **DevOps:** Docker, Kubernetes, Jenkins, GitHub Actions
 
 ---
 
 ## 📂 Project Structure
 
 ```
-📛 start2launch-backend
+📛 start2launch_backend
  ├ 📚 src
  ├ ├ 📚 main
  ├ ├ ├ 📚 java/com/start2launch
@@ -50,59 +50,64 @@ The backend is built using **Spring Boot**, providing a secure and scalable REST
 
 ---
 
-## 🚀 Getting Started  
+## 🚀 Getting Started
 
-### 1⃣ Prerequisites  
+### 1⃣ Prerequisites
 
-- **JDK 17+**  
-- **Maven**  
-- **MySQL & MongoDB** (Ensure both databases are running)  
-- **Docker (Optional, for containerized deployment)**  
+- **JDK 17+**
+- **Maven**
+- **MySQL & MongoDB** (Ensure both databases are running)
+- **Docker (Optional, for containerized deployment)**
 
 ---
 
-### 2⃣ Installation  
+### 2⃣ Installation
 
-#### **Clone the repository**  
+#### **Clone the repository**
+
 ```sh
-git clone https://github.com/yourusername/start2launch-backend.git
+git clone https://github.com/Lionf5/start2launch_backend.git
 cd start2launch-backend
 ```
 
-#### **Configure environment variables**  
+#### **Configure environment variables**
+
 Update `application.yml` with database credentials & OAuth settings.
 
-#### **Run the application**  
+#### **Run the application**
+
 ```sh
 mvn spring-boot:run
 ```
 
 ---
 
-## 📡 API Endpoints  
+## 📡 API Endpoints
 
-| Method | Endpoint | Description | Authentication |
-|--------|---------|-------------|---------------|
-| POST | `/auth/register` | Register a new user | ❌ |
-| POST | `/auth/login` | Authenticate user | ❌ |
-| GET | `/projects` | Fetch all projects | ✅ |
-| POST | `/projects` | Create a new project | ✅ (Admin/Lead) |
-| GET | `/chat/messages/{projectId}` | Get messages for a project | ✅ |
-| POST | `/chat/send` | Send a message | ✅ |
+| Method | Endpoint                     | Description                | Authentication |
+| ------ | ---------------------------- | -------------------------- | -------------- |
+| POST   | `/auth/register`             | Register a new user        | ❌              |
+| POST   | `/auth/login`                | Authenticate user          | ❌              |
+| GET    | `/projects`                  | Fetch all projects         | ✅              |
+| POST   | `/projects`                  | Create a new project       | ✅ (Admin/Lead) |
+| GET    | `/chat/messages/{projectId}` | Get messages for a project | ✅              |
+| POST   | `/chat/send`                 | Send a message             | ✅              |
 
-📌 **Full API Documentation**: [Swagger UI](http://localhost:8080/swagger-ui.html)  
+📌 **Full API Documentation**: [Swagger UI](http://localhost:8080/swagger-ui.html)
 
 ---
 
-## 🛠️ Deployment  
+## 🛠️ Deployment
 
-### Docker  
+### Docker
+
 ```sh
-docker build -t start2launch-backend .
-docker run -p 8080:8080 start2launch-backend
+docker build -t start2launch_backend .
+docker run -p 8080:8080 start2launch_backend
 ```
 
-### Kubernetes  
+### Kubernetes
+
 ```sh
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
@@ -110,23 +115,25 @@ kubectl apply -f k8s/service.yaml
 
 ---
 
-## 📢 Contributing  
+## 📢 Contributing
 
-We welcome contributions! Feel free to submit issues and pull requests.  
+We welcome contributions! Feel free to submit issues and pull requests.
 
-1. Fork the repo  
-2. Create a new branch (`git checkout -b feature-branch`)  
-3. Commit your changes (`git commit -m "Added new feature"`)  
-4. Push to the branch (`git push origin feature-branch`)  
-5. Open a PR  
-
----
-
-## 📚 License  
-
-This project is licensed under the **MIT License**.  
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m "Added new feature"`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a PR
 
 ---
 
-🚀 **Start2Launch Backend - Powering Real-Time Collaboration!**  
+## 📚 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+🚀 **Start2Launch Backend - Powering Real-Time Collaboration!**
+
+🔗 **Repository URL:** [GitHub - Lionf5/start2launch_backend](https://github.com/Lionf5/start2launch_backend)
 
